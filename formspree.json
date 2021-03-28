@@ -2,7 +2,15 @@
 	"forms": {
 	  "contactForm": {
 		"name": "Contact Form",
-		"actions": [{ "type": "email", "to": "{your-email-address}" }]
+		"actions": [{ "type": "email", "to": "jayanth.mogadampalli@gmail.com" }],
+		"fields":{
+			"email" : {
+				"required" : true
+			},
+			"name" :{
+				"required" :true
+			}
+		}
 	  }
 	}
   }

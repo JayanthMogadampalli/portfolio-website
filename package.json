@@ -9,6 +9,7 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
     "bootstrap": "^4.5.3",
+    "dotenv": "^8.2.0",
     "install": "^0.13.0",
     "node-sass": "^4.14.1",
     "npm": "^7.7.4",
@@ -21,7 +22,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && formspree deploy",
+    "formspree": "formspree deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

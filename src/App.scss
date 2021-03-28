@@ -2,17 +2,20 @@
 
 html{
   height:100%;
+  max-width: 100%;
 }
 
 body{
 	height : inherit;
 	font-family: 'montserrat', sans-serif !important;
 	background-color: #F0F3F5 !important;
-
+	max-width: 100%;
+	
 }
 
 #root{
  height :inherit;
+ max-width: 100%;
 }
 
 
@@ -20,6 +23,7 @@ body{
 	overflow: auto;
 	height: 100%;
 	width: 100%;
+	max-width:100%;
 }
 
 .navbr{
