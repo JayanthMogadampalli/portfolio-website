@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "formspree": "formspree deploy",
+    "formspree": "formspree deploy -k dad3eda4c65d4ed4b220ab7102af5439",
     "build": "react-scripts build && npm run formspree",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
