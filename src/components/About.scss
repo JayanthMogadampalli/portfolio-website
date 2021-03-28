@@ -1,0 +1,83 @@
+.container{
+	display: flex;
+	flex-direction: row;
+}
+
+.profile{
+	text-align:center;
+	position :relative;
+	padding: 30px 10px;
+}
+
+.userImg{
+	border-radius: 50%;
+	width : 270px;
+	height : 270px;
+	margin-top: 30px;
+   margin-left: 10%;
+}
+
+.routeDiv{
+	height:100%;
+	padding-bottom: 20px;
+}
+
+.userInfo {
+    margin-top: 60px;
+    padding: 1% 9% !important;
+}
+
+.interests{
+  margin : 10px;
+  width : 50%;
+  h3{
+	  font-weight: 700;
+	  margin-top:1.5rem;
+	  font-size: 1.25rem;
+  }
+  div{
+	  font-weight: 300;
+	  font-size: 14px;
+  }
+
+  .fa-graduation-cap{
+	  position :relative;
+  }
+}
+
+h3{
+	font-weight: 400px;
+    font-size: 1.50rem !important;
+}
+
+.network-icons{
+	flex-wrap: wrap;
+	margin-left: 10%;
+
+	i{
+		margin: 15px 15px;
+	}
+
+	.big-icon{
+		font-size: 2rem;
+	}
+    div:nth-of-type(1){
+	   margin-left: 20%;
+       padding-left: 4%;
+
+	}
+
+	a, a:hover {
+		color: #795548;
+	}
+   
+}
+
+.potrait-title{
+	margin-left: 10%;
+	margin-top: 10%;
+	h3.article-title {
+		color: #795548;
+	}
+}
+
