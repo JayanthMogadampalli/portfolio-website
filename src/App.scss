@@ -87,3 +87,26 @@ body{
 	justify-content: space-around;
 	margin-right: 100px;
 }
+
+.navbar-toggler.collapsed, .navbar-toggler{
+	width: 60px;
+	position: relative;
+	bottom: 40px;
+	right: 15px;
+	height: 30px;
+	i{
+	font-size: 0.9rem;
+	}
+
+	.ml-auto.navbar-nav {
+		margin-left: auto !important;
+		background-color: #648ca7;
+		position: relative;
+		bottom: 30px;
+		right: 73px;
+		width: 150px;
+		height: 100%;
+		transition: color .3s ease;
+
+	}
+}
