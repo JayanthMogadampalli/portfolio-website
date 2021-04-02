@@ -4,8 +4,8 @@ import './Experience.scss';
 
 export default function Experience() {
 	return (
-		<div className="d-flex flex-row experience flex-wrap">
-			<div className="col-lg-4"><h1>Experience</h1></div>
+		<div className="d-flex flex-row experience flex-wrap" id="Experience">
+			<div className="col-lg-4"><h1 className="experienceTitle">Experience</h1></div>
 			<div className="col-lg-8 timeline flex-wrap">
 				<div className="container right">
 					<div className="content">

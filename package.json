@@ -22,7 +22,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start && formspree deploy",
     "formspree": "formspree deploy",
     "build": "react-scripts build && npm run formspree",
     "test": "react-scripts test",

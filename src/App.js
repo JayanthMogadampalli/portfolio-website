@@ -1,5 +1,4 @@
-import React from 'react';
-import { Route, Switch, NavLink } from 'react-router-dom'
+import React,{useEffect} from 'react';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from "./components/About";
@@ -8,8 +7,26 @@ import Contact from './components/Contact';
 import Skills from './components/Skills';
 import Posts from './components/Posts';
 import { Row, Col, Navbar, Nav } from 'react-bootstrap';
+import Resume from './assets/resume.pdf';
 
 function App() {
+
+  useEffect(() => {
+    let x =  document.getElementsByClassName("home");
+    console.log(x);
+    if(x[0]){ x[0].classList.add('active');}
+    return ()=> null;
+  });
+
+  const changeClass =(e)=>{
+    let x =  document.getElementsByClassName("active");
+    if(x.length===1 || x.length===2){
+      x[0].classList.remove('active');
+    }
+   else{ x[0].classList.remove('active');}
+     x =  document.getElementsByClassName("active");
+  };
+
   return (
     <div className="mainDiv">
         <Navbar collapseOnSelect expand="lg" className="navbr">
@@ -17,27 +34,22 @@ function App() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
-              <NavLink to="/" exact activeClassName="selected" className="ml-2 mr-2">Home</NavLink>
-              <NavLink to="/Skills" activeClassName="selected" className="ml-2 mr-2">Skills</NavLink>
-              <NavLink to="/Experience" activeClassName="selected" className="ml-2 mr-2">Experience</NavLink>
-              <NavLink to="/Posts" activeClassName="selected" className="ml-2 mr-2">Posts</NavLink>
-              <NavLink to="/Contact" activeClassName="selected" className="ml-2 mr-2">Contact</NavLink>
+              <Nav.Link href="/#about" exact onClick={(e)=>{changeClass(e)}}  data-target="#about" className="ml-2 mr-2 home">Home</Nav.Link>
+              <Nav.Link href="/#Skills" onClick={(e)=>{changeClass(e)}}  data-target="#Skills" className=" ml-2 mr-2">Skills</Nav.Link>
+              <Nav.Link href="/#Experience" onClick={(e)=>{changeClass(e)}}  data-target="#Experience" className="ml-2 mr-2">Experience</Nav.Link>
+              <Nav.Link href="/#Posts" onClick={(e)=>{changeClass(e)}}  data-target="#Posts" className="ml-2 mr-2">Posts</Nav.Link>
+              <Nav.Link href={Resume} onClick={(e)=>{changeClass(e)}}  rel="noreferrer" target="_blank" className="ml-2 mr-2">Resume</Nav.Link>              
+              <Nav.Link href="/#Contact" onClick={(e)=>{changeClass(e)}} data-target="#Contact" className="ml-2 mr-2">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-
       <Row className="m-0 height-100">
         <Col className="col-lg-12">
-          <Switch>
-            <Route path='/Skills' component={Skills} />
-            <Route path='/Contact' component={Contact} />
-            <Route path='/Experience' component={Experience} />
-            <Route path='/Posts/1' render={() => (window.location = "https://medium.com/@jayu6766/four-years-journey-of-a-cs-undergrad-with-learning-unlearning-and-relearning-36f30540bc4a")}  />
-            <Route path='/Posts/2' render={() => (window.location = "https://medium.com/@jayu6766/journey-from-a-newbie-to-react-developer-5c7b2a8ad17f")}  />
-            <Route path='/Posts/3' render={() => (window.location = "https://medium.com/dsc-sastra-deemed-to-be-university/readme-gateway-to-open-source-project-a9afceb04384")}  />
-            <Route path='/Posts' exact component={Posts} />
-            <Route path='/' exact component={About} />
-          </Switch>
+        <About/>
+        <Skills/>
+        <Experience/>
+        <Posts/>
+        <Contact/>
         </Col>
       </Row>
     </div>

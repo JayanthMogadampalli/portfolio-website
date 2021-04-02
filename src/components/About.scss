@@ -18,13 +18,18 @@
 }
 
 .routeDiv{
-	height:100%;
+	height:auto;
 	padding-bottom: 20px;
 }
 
 .userInfo {
     margin-top: 60px;
     padding: 1% 9% !important;
+
+	 .userTitle{
+        font-weight: 600;
+		margin-bottom: 2%;
+	 }
 }
 
 .interests{

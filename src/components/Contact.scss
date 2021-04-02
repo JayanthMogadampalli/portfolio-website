@@ -1,8 +1,14 @@
 .contact{
     padding: 8%;
-	height:100%;
+	height:auto;
     .col-lg-4{
-		padding: 5%;
+		padding: 4%;
+	}
+
+	.contactText{
+		margin-left:5%;
+		margin-bottom: 5%;
+		font-weight: 700;
 	}
 
 	.contactForm{
@@ -12,6 +18,13 @@
 	   .col-9{
 		   margin:2% 0;
 	   }
+	}
+
+	.submitAcknowledgment{
+		background-color: #fff;
+		color:blue;
+		width: 200px;
+		height: 100px;
 	}
 	
 }

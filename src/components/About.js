@@ -6,7 +6,7 @@ import usrImg from '../assets/userImg.jpg';
 
 export default function About() {
 	return (
-		<div className="m-0 height-92">
+		<div className="m-0 height-92" id="about" >
 			<Row className="routeDiv">
 				<Col lg={4} className="col-lg-4 profile d-flex flex-column">
 					<div>
@@ -44,13 +44,17 @@ export default function About() {
 					</div>
 				</Col>
 				<Col lg={8} className="col-lg-8 userInfo">
-					<h1>Biography</h1>
+					<h1 className="userTitle">Biography</h1>
 					<p>
 						I am Software Engineer at Freshworks, Hyderabad joined in 2020. I worked on developing React web applications and slack chat bot and deploying it using AWS services and build and infrastructure tools.I have a Bachelor of Technology degree from the SASTRA Deemed to be University.
 			 </p>
 					<p>
 						I am a Frontend developer with good knowledge on latest technologies.I love to learn new things and write code.I am a lifetime learner and wish to make a difference.
-			 </p>
+						Aside from work, I write articles in medium and short stories in my free time.
+			        </p>
+					<p>
+					  My interest lies in solving real-life problems using technology.
+					</p>
 					<div className="d-flex flex-row">
 						<div className="interests">
 							<h3>Interests</h3>
@@ -65,8 +69,8 @@ export default function About() {
 						</div>
 						<div className="interests d-flex flex-column">
 						    <h3>Education</h3>
-							<div class="d-flex flex-row">
-								<div><i class="fa-li fas fa-graduation-cap d-inline"></i></div>
+							<div className="d-flex flex-row">
+								<div><i className="fa-li fas fa-graduation-cap d-inline"></i></div>
 								<div>BTech in Computer Science and Engineering,2020 <br/> SASTRA DEEMED UNIVERSITY, Thanjavur
 								</div>
 							</div>

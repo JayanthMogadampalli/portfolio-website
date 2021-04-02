@@ -10,7 +10,6 @@ body{
 	font-family: 'montserrat', sans-serif !important;
 	background-color: #F0F3F5 !important;
 	max-width: 100%;
-	
 }
 
 #root{
@@ -45,8 +44,8 @@ body{
 
 }
 
-.navbar-nav a, .navbar-nav a:hover, .navbar-nav a:active{
-	color: #000;
+.navbar-light .navbar-nav .nav-link {
+ 	color: #000 !important;
 	text-decoration: none;
 }
 
@@ -63,7 +62,7 @@ body{
 
 
 .height-92{
-	height: 92%  !important;
+	height:auto;
 }
 
 .col-lg-11{

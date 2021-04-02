@@ -4,12 +4,17 @@
 
 .experience{
 	padding: 4% 5%;
-	height: 100%;
+	height: auto;
 	max-height: 100%;
 	margin-left: 4%;
 	overflow: hidden;
 }
 
+.experienceTitle{
+	margin-left:10%;
+	margin-bottom: 5%;
+	font-weight: 700;
+}
 
 .timeline {
 	position: relative;
@@ -70,6 +75,7 @@
 	padding: 10px 10px;
 	background-color: #F0F3F5;
 	position: relative;
+	width: 100%;
 	border-radius: 6px;
   }
   
@@ -109,7 +115,7 @@
   .card{
 	margin-bottom: 1.5rem;
 	overflow: hidden;
-	width:18rem;
+	width:80%;
 	max-width: 90% !important;
 	background: #e3edf3;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
