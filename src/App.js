@@ -20,11 +20,12 @@ function App() {
 
   const changeClass =(e)=>{
     let x =  document.getElementsByClassName("active");
-    if(x.length===1 || x.length===2){
-      x[0].classList.remove('active');
-    }
-   else{ x[0].classList.remove('active');}
-     x =  document.getElementsByClassName("active");
+    if(x[0].text!==e.target.text)
+      if(x.length===1 || x.length===2){
+        x[0].classList.remove('active');
+      }
+    else{ x[0].classList.remove('active');}
+      x =  document.getElementsByClassName("active");
   };
 
   return (
