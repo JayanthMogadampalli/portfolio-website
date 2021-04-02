@@ -60,10 +60,10 @@ export default function About() {
 							<h3>Interests</h3>
 			   <div className="d-flex flex-column">
 								<div>
-									FullStack Development
+									FrontEnd Development
 	    		 </div>
 								<div>
-									Android Development
+									 Data Structures
 				 </div>
 							</div>
 						</div>
