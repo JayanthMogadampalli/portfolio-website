@@ -11,10 +11,23 @@ export default function Experience() {
 					<div className="content">
 						<Card>
 							<Card.Body>
+								<Card.Title className="exp-title">UI Engineer 2</Card.Title>
+								<Card.Title>MoEngage</Card.Title>
+								<Card.Text>
+									March 2022 - Present
+						</Card.Text>
+							</Card.Body>
+						</Card>
+					</div>
+				</div>
+				<div className="container right">
+					<div className="content">
+						<Card>
+							<Card.Body>
 								<Card.Title className="exp-title">Software Engineer</Card.Title>
 								<Card.Title>Freshworks</Card.Title>
 								<Card.Text>
-									October 2020 - Present
+									October 2020 - March 2022
 						</Card.Text>
 							</Card.Body>
 						</Card>
