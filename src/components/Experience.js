@@ -25,7 +25,7 @@ export default function Experience() {
 						<Card>
 							<Card.Body>
 								<Card.Title className="exp-title">Software Engineer</Card.Title>
-								<Card.Title>Freshworks</Card.Title>
+								<Card.Title>Freshworks Technologies Pvt Ltd</Card.Title>
 								<Card.Text>
 									October 2020 - March 2022
 						</Card.Text>
@@ -50,8 +50,8 @@ export default function Experience() {
 					<div className="content">
 						<Card>
 							<Card.Body>
-								<Card.Title className="exp-title">Web Developer Intern</Card.Title>
-								<Card.Title>UnoCareer pvt ltd</Card.Title>
+								<Card.Title className="exp-title">Software Engineer Intern</Card.Title>
+								<Card.Title>UnoCareer Pvt Ltd</Card.Title>
 								<Card.Text>
 									May 2019 - June 2019
 								</Card.Text>
