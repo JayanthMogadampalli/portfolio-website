@@ -7,7 +7,6 @@ import Contact from './components/Contact';
 import Skills from './components/Skills';
 import Posts from './components/Posts';
 import { Row, Col, Navbar, Nav } from 'react-bootstrap';
-import Resume from './assets/resume.pdf';
 
 function App() {
 
@@ -39,7 +38,7 @@ function App() {
               <Nav.Link href="/#Skills" onClick={(e)=>{changeClass(e)}}  data-target="#Skills" className=" ml-2 mr-2">Skills</Nav.Link>
               <Nav.Link href="/#Experience" onClick={(e)=>{changeClass(e)}}  data-target="#Experience" className="ml-2 mr-2">Experience</Nav.Link>
               <Nav.Link href="/#Posts" onClick={(e)=>{changeClass(e)}}  data-target="#Posts" className="ml-2 mr-2">Posts</Nav.Link>
-              <Nav.Link href={Resume} onClick={(e)=>{changeClass(e)}}  rel="noreferrer" target="_blank" className="ml-2 mr-2">Resume</Nav.Link>              
+              <Nav.Link href="/resume.pdf" onClick={(e)=>{changeClass(e)}}  rel="noreferrer" target="_blank" className="ml-2 mr-2">Resume</Nav.Link>              
               <Nav.Link href="/#Contact" onClick={(e)=>{changeClass(e)}} data-target="#Contact" className="ml-2 mr-2">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
