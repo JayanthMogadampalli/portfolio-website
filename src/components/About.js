@@ -14,8 +14,8 @@ export default function About() {
 					</div>
 					<div className="potrait-title">
 						<h2>Jayanth Mogadampalli</h2>
-						<h3>Software Engineer</h3>
-						<h3>Freshworks,Hyderabad</h3>
+						<h3>UI Engineer 2</h3>
+						<h3>MoEngage, Bangalore</h3>
 					</div>
 					<div className="network-icons d-flex flex-row">
 						<div>
@@ -46,7 +46,7 @@ export default function About() {
 				<Col lg={8} className="col-lg-8 userInfo">
 					<h1 className="userTitle">Biography</h1>
 					<p>
-						I am Software Engineer at Freshworks, Hyderabad joined in 2020. I worked on developing React web applications and slack chat bot and deploying it using AWS services and build and infrastructure tools.I have a Bachelor of Technology degree from the SASTRA Deemed to be University.
+						I am a UI Engineer 2 at MoEngage, Bangalore joined in 2022. I work on developing React web applications and building reusable UI components for customer engagement platforms. I have experience in developing high-scale applications and optimizing performance. I have a Bachelor of Technology degree from the SASTRA Deemed to be University.
 			 </p>
 					<p>
 						I am a Frontend developer with good knowledge on latest technologies.I love to learn new things and write code.I am a lifetime learner and wish to make a difference.
@@ -60,10 +60,10 @@ export default function About() {
 							<h3>Interests</h3>
 			   <div className="d-flex flex-column">
 								<div>
-									FrontEnd Development
+									Full Stack Development
 	    		 </div>
 								<div>
-									 Data Structures
+									 Data Structures and Algorithms
 				 </div>
 							</div>
 						</div>
